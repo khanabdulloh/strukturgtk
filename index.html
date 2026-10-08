@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#0b3d91">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --blue:#0b3d91; --blue-700:#08306f; --blue-900:#061f4a;
@@ -151,6 +151,28 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
   .node.kepsek{flex-direction:column;text-align:center}
   section{padding-top:58px}
 }
+
+/* ===== Tema cerah & modern (rujukan: smkciledugalmusaddadiyah.sch.id) ===== */
+:root{--blue:#1456d8;--blue-700:#0f47b8;--blue-900:#0b3d91;--gold:#f7b92e;--gold-soft:#fff6d9;--ink:#0f1f45;--muted:#50607f;--line:#e0e9f8;--line-2:#c9daf5;--bg:#f6f9ff;--radius:16px;--shadow:0 1px 2px rgba(15,31,69,.04),0 8px 24px rgba(20,86,216,.07);--serif:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+h1,h2,h3,.fact strong,.tl-year{letter-spacing:-.02em}
+h2,.hero h1{font-weight:800}
+.hero h1{letter-spacing:-.03em}
+h2 em,.hero h1 em,.cta h2 em{font-style:normal}
+.hero{background:radial-gradient(900px 420px at 90% -20%,rgba(255,255,255,.24),transparent 60%),linear-gradient(135deg,#0b3d91 0%,#1456d8 58%,#2f7bff 100%)}
+.hero::after{display:none}
+.cta{background:radial-gradient(700px 300px at 50% -30%,rgba(255,255,255,.22),transparent 60%),linear-gradient(135deg,#0b3d91,#1456d8 70%,#2f7bff)}
+.hero .eyebrow{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.38);color:#fff}
+.eyebrow{text-transform:none;letter-spacing:.01em;font-weight:700;font-size:.86rem}
+.sec-head .eyebrow,.profile dt,.node .role,.subhead{color:var(--blue)}
+.profile dt,.node .role,.subhead,footer h4,.brand small,.person .tag{text-transform:none;letter-spacing:.01em}
+.prose p,.chips span{color:#26385f}
+.value i,.lk i,.person .tag{background:#eaf2ff;color:var(--blue)}
+.subnav a{background:transparent;border-color:var(--line-2)}
+.btn-gold,.btn-blue{box-shadow:none}
+.program:hover,.lk:hover{transform:none;border-color:var(--blue);box-shadow:var(--shadow)}
+.principal blockquote{font-style:normal;font-weight:600;font-size:1.2rem}
+.js .reveal{transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+@media (min-width:561px){section{padding-top:88px}}
 </style>
 </head>
 <body>
@@ -167,7 +189,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
     </div>
     <span class="eyebrow">Struktur &amp; GTK</span>
     <h1>Tim di Balik <em>Pendidikan Vokasi Berkarakter</em></h1>
-    <p class="lead">Struktur organisasi, direktori guru dan tenaga kependidikan (GTK), serta tautan layanan GTK SMKS Ciledug Al-Musaddadiyah Garut.</p>
+    <p class="lead">Struktur kepemimpinan, direktori pendidik dan tenaga kependidikan, serta akses cepat ke layanan GTK resmi SMK Ciledug Al-Musaddadiyah.</p>
     <div class="cta-row">
       <a class="btn btn-gold" href="#struktur">Lihat Struktur</a>
       <a class="btn btn-ghost" href="#layanan">Layanan GTK</a>
@@ -179,7 +201,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
   <div class="facts reveal">
     <div class="fact"><strong>30+</strong><span>Guru Tersertifikasi Profesional</span></div>
     <div class="fact"><strong>7</strong><span>Program Keahlian</span></div>
-    <div class="fact"><strong>1</strong><span>Yayasan Penaung: Al-Musaddadiyah Garut</span></div>
+    <div class="fact"><strong>A</strong><span>Akreditasi BAN-S/M</span></div>
   </div>
 
   <nav class="subnav" aria-label="Navigasi halaman">
@@ -192,7 +214,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
   <!-- STRUKTUR -->
   <section id="struktur">
     <div class="sec-head reveal">
-      <span class="eyebrow" style="color:#b17f10">Struktur Organisasi</span>
+      <span class="eyebrow">Struktur Organisasi</span>
       <h2>Bagan <em>Kepemimpinan Sekolah</em></h2>
       <p>Dari Yayasan Al-Musaddadiyah hingga tiap program keahlian.</p>
     </div>
@@ -202,7 +224,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
   <!-- DIREKTORI -->
   <section id="direktori">
     <div class="sec-head reveal">
-      <span class="eyebrow" style="color:#b17f10">Direktori GTK</span>
+      <span class="eyebrow">Direktori GTK</span>
       <h2>Guru &amp; <em>Tenaga Kependidikan</em></h2>
       <p>Cari berdasarkan nama, jabatan, atau mata pelajaran.</p>
     </div>
@@ -219,7 +241,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
   <!-- LAYANAN -->
   <section id="layanan">
     <div class="sec-head reveal">
-      <span class="eyebrow" style="color:#b17f10">Referensi GTK</span>
+      <span class="eyebrow">Referensi GTK</span>
       <h2>Layanan &amp; <em>Tautan Penting</em></h2>
       <p>Portal resmi yang sering dipakai guru dan tenaga kependidikan.</p>
     </div>
@@ -304,7 +326,7 @@ var STRUKTUR = {
   kaprog: [
     { kode: "AKL", role: "Akuntansi Keuangan Lembaga", nama: "" },
     { kode: "BD",  role: "Bisnis Digital", nama: "" },
-    { kode: "MP",  role: "Manajemen Perkantoran", nama: "" },
+    { kode: "MPLB",  role: "Manajemen Perkantoran", nama: "" },
     { kode: "TKJ", role: "Teknik Komputer & Jaringan", nama: "" },
     { kode: "DKV", role: "Desain Komunikasi Visual", nama: "" },
     { kode: "TKR", role: "Teknik Kendaraan Ringan", nama: "" },
@@ -326,7 +348,7 @@ var GURU = [
   document.documentElement.className += ' js';
   function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
   function initials(n){
-    var w = String(n).replace(/[,.].*$/,'').replace(/^(KH|H|Hj|Dr|Drs|Ir)\.?\s+/i,'').trim().split(/\s+/);
+    var w = String(n).replace(/,.*$/,'').replace(/^((KH|H|Hj|Dr|Drs|Ir|Prof)\.?\s+)+/i,'').trim().split(/\s+/).filter(function(x){return x.length>2||!/\.$/.test(x);});
     return ((w[0]||'')[0]||'') + ((w[1]||'')[0]||'');
   }
   function avatar(p){
